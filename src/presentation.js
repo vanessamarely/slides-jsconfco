@@ -237,12 +237,286 @@ export default class Presentation extends React.Component {
             <Cite>Kyle Simpson</Cite>
           </BlockQuote>
         </Slide>
-        <Slide transition={['fade']} bgColor="tertiary">
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
           <Heading size={3} textColor="secondary">
           Hacemos parte de la Web x ende JS es parte de nuestro ADN. Es bueno conocer ese ADN
           </Heading>
         </Slide>
-        
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={3} textColor="secondary">
+          JavaScript es un lenguaje muy amado y usado, su gran trayectoria le visionó un gran futuro.
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={3} textColor="secondary">
+          En sus inicios una organización Europea (ECMA), creó un comité para estandarizarlo.
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={3} textColor="secondary">
+          A partir de ese momento la vida de nuestro lenguaje cambio.
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={3} textColor="secondary">
+          El comité le dijo a JS que podía usar y que iba a seguir usando a medida que pasa el tiempo.
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={3} textColor="secondary">
+          Y JS le dijo a sus Dev cómo debían escribir el código, que se iba a seguir usando y que iba a dejar de usar. 
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={3} textColor="secondary">
+          Hay un montón de conceptos que se manejan para esos estándares y quiero compartirte algunos de ellos.
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={3} textColor="secondary">
+          JS en su código, tiene una forma de escribir sus recetas llamada funciones.
+          </Heading>
+          <Heading size={4} textColor="secondary">
+          función  =  acción
+          </Heading>
+          <Heading size={5} textColor="secondary">
+          Puede tener argumentos
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={3} textColor="secondary">
+          Si JS se quiere preparar un Sandwich lo hace de la siguiente forma:
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={3} textColor="secondary">
+            {`function makeSandwich(meat, vegetable, bread){
+              let sandwich = meat + vegetable + bread;
+              return sandwich;
+            }`}
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={3} textColor="secondary">
+          Uno de los estándares, en su versión ES6 trajo un concepto llamado: 
+          </Heading>
+          <Heading size={2} textColor="secondary">
+         Arrow functions.
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={3} textColor="secondary">
+          Los arrow functions.
+          A veces llamado 'fat arrow'
+          Una mejora para hacer nuestro sandwich corto.
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={3} textColor="secondary">
+          Si imaginamos que vemos un tobogán, nos podríamos hacer una idea el arrow functions.
+          Ponemos algo en la base, que baja por el tobogán y cae en la piscina.
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={3} textColor="secondary">
+          ¿Cómo hacemos con otro estándar nuestro Sandwich?
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={3} textColor="secondary">
+          {`let sandwich = (meat, vegetable, bread) =>  meat + vegetable + bread;`}
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={3} textColor="secondary">
+          Si queremos extraer datos de colecciones de datos (arrays) o propiedades (objetos).
+          Podemos hacer Destructuring
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={3} textColor="secondary">
+          {`const ["meat", "vegetable", "bread"] = sandwich;`}
+          {`const {a, b, c} = sandwich;`}
+          // a = meat
+          // b = vegetable
+          // c = bread
+        </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={4} textColor="secondary">
+          JS tiene un tipo de dato llamado Strings, que para ciertas expresiones lo podemos usar concatenadolo:
+          {`const sandwich = meat + vegetable + bread;`}
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={4} textColor="secondary">
+          Podemos hacer strings dinámicos usando algo llamado ‘Template literals’
+          { //`const sandwich = ${meat} ${vegetable} ${bread}`
+          }
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={5} textColor="secondary">
+          Hay ocasiones donde le prometemos algo a alguien y dependiendo de la situación, se mantienen o se rompen, se resuelven o rechazan.
+          En JS tambien hacemos promesas.
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={5} textColor="secondary">
+          {`const promise = new Promise((resolve, reject) => {
+          /* Do something here */
+          })`}
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={5} textColor="secondary">
+          Y esas son solo algunas de las características que JS quiere que conozcas y hay muchas más.
+          Ya que el mundo de JS es inmensamente grande.
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={5} textColor="secondary">
+          Como todos los famosos, JS tiene algunos secretos.
+          No los divulguen!!
+          es un secreto
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={5} textColor="secondary">
+          Podemos obtener Valores únicos:
+          {`const values = [...new Set([1, 2, 3, 3])];`}
+          {`console.log(values)`}
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={5} textColor="secondary">
+          Podemos crear objetos vacíos
+          {`let dictionary = Object.create(null);`}
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={5} textColor="secondary">
+          Podemos unir objetos
+          {`const person = { name: 'David Walsh', gender: 'Male' };`}
+          {`const tools = { computer: 'Mac', editor: 'Atom' };`}
+          {`const attributes = { handsomeness: 'Extreme', hair: 'Brown', eyes: 'Blue' };`}
+          {`const summary = {...person, ...tools, ...attributes};`}
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={5} textColor="secondary">
+          Falsy
+          <List>
+            <ListItem>0</ListItem>
+            <ListItem>-0</ListItem>
+            <ListItem>null</ListItem>
+            <ListItem>undefined</ListItem>
+            <ListItem>''</ListItem>
+            <ListItem>NaN</ListItem>
+            <ListItem>false</ListItem>
+          </List>
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={5} textColor="secondary">
+          Blah… Blah...
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={3} textColor="secondary">
+          JS tiene características y secretos muy cheveres y un gran futuro
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={2} textColor="secondary">
+          ¿Qué recursos podemos usar para contar las historias?
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={2} textColor="secondary">
+          Existen recursos que nos pueden ayudar de forma escrita, verbal, audio, digital (Web)
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={2} textColor="secondary">
+          Nosotros usamos algunos de forma escrita como:
+          Slides, Blogs, Libros
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={2} textColor="secondary">
+          Yo empleo mucho el Gitbook para dar talleres o explicar conceptos:
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={2} textColor="secondary">
+          Necesitamos las imágenes, ya que estamos en una época muy visual.
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={2} textColor="secondary">
+          Podemos crearlos con código en la Web
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={2} textColor="secondary">
+          A todos nos gustan los Comic y podemos usarlos para hacer historias.
+          </Heading>
+          <Heading size={3} textColor="secondary">
+          Comic.js 
+          React Komik!
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={2} textColor="secondary">
+          Aparte de los mencionados, podemos usar muchos más.
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={2} textColor="secondary">
+          ¿Quienes se pueden beneficiar de nuestras historias?
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={2} textColor="secondary">
+          ¡Todo el mundo!
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={1} textColor="secondary">
+          Conclusiones
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={3} textColor="secondary">
+          Contar historias (Storytelling) nos ayuda a solidificar los conocimientos que queremos compartir.
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={4} textColor="secondary">
+          Tenemos muchos medios para contar las historias. Usemos todo lo que la Multimedia nos brinda para entregar mejor contenido.
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={4} textColor="secondary">
+          Contemos historias para:
+          <List>
+            <ListItem>Entregar mejor nuestra info</ListItem>
+            <ListItem>Enseñar</ListItem>
+            <ListItem>Mejorar nuestra documentación</ListItem>
+          </List>
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={4} textColor="secondary">
+          ¡Contemos historias de todo y usemoslas en todo!
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={1} textColor="secondary">
+          ¡¡Muchas Gracias!!
+          </Heading>
+        </Slide>
       </Deck>
     );
   }
