@@ -41,35 +41,76 @@ export default class Presentation extends React.Component {
         transitionDuration={500}
         theme={theme}
       >
-        <Slide transition={['zoom']} bgColor="primary">
-          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            Spectacle Boilerplate
-          </Heading>
-          <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
-            open the presentation/index.js file to get started
-          </Text>
+        <Slide transition={['fade']} bgColor="secondary" textColor="primary">
+          <BlockQuote>
+            <Quote>Todo lo que hacemos es contar historias</Quote>
+          </BlockQuote>
         </Slide>
         <Slide transition={['fade']} bgColor="tertiary">
-          <Heading size={6} textColor="primary" caps>
-            Typography
-          </Heading>
           <Heading size={1} textColor="secondary">
-            Heading 1
+            Había una vez
           </Heading>
           <Heading size={2} textColor="secondary">
-            Heading 2
+            Un lenguaje de programación
           </Heading>
           <Heading size={3} textColor="secondary">
-            Heading 3
+            Llamado JavaScript
           </Heading>
-          <Heading size={4} textColor="secondary">
-            Heading 4
+        </Slide>
+        <Slide transition={['fade']} bgColor="tertiary">
+          <Heading size={1} textColor="secondary">
+            Vino a este mundo
           </Heading>
-          <Heading size={5} textColor="secondary">
-            Heading 5
+          <Heading size={2} textColor="secondary">
+            Con grandes habilidades 
           </Heading>
-          <Text size={6} textColor="secondary">
-            Standard text
+        </Slide>
+        <Slide transition={['fade']} bgColor="tertiary">
+          <Heading size={2} textColor="secondary">
+          Creció para convertirse en un poderoso lenguaje
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="tertiary">
+          <Heading size={2} textColor="secondary">
+          Todo el mundo quería que estuviera en todas partes
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="tertiary">
+          <Heading size={3} textColor="secondary">
+          En algunos lugares querían que fuera más estructurado que en otros
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="tertiary">
+          <Heading size={2} textColor="secondary">
+          Se convirtió en el lenguaje más amado y usado por todos
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="tertiary">
+          <Heading size={1} textColor="secondary">
+          Y...
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="tertiary">
+          <Heading size={1} textColor="secondary">
+          Esa es otra historia ...
+          </Heading>
+        </Slide>
+        <Slide transition={['zoom']} bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+          Contando 
+          </Heading>
+          <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
+          Una Historia
+          </Text>
+        </Slide>
+        <Slide transition={['zoom']} bgColor="primary">
+          <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
+          Vanessa Aristizabal
+          </Text>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary">
+          <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
+          Podemos crear historias (Storytelling) de todo lo que nos rodea y podemos enseñar con ellas
           </Text>
         </Slide>
         <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
